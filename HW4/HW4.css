@@ -1,0 +1,15 @@
+body {background-color:beige }
+h1 {text-align: center}
+.ok {text-align: center}
+.p1 {background-color:brown}
+.span1 {background-color:darkcyan;color:black}
+.span2 {background-color: gold;color:black}
+.p2 {background-color:darkturquoise}
+.div2 {text-align: center}
+
+.ugh { display: none;
+    background-color: cyan;
+    padding: 20px;
+    }
+
+div:hover .ugh {display: block} 

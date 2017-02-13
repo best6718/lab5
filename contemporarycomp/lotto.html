@@ -1,0 +1,33 @@
+<html>
+
+ <head>
+   <title> Lucky Number </title>
+   <script type="text/javascript"  src="random.js">
+   </script>
+
+ </head>
+
+ <body>
+    
+     <form name="LuckyForm">    
+       <input 
+        type="button" 
+        value="Click Here for Your Four Lucky Number"       
+        onClick=" luckyNum1 = RandomInt(1, 100);
+                  luckyNum2 = RandomInt(1, 100);
+                  luckyNum3 = RandomInt(1, 100);
+                  luckyNum4 = RandomInt(1, 100);
+                  document.getElementById('lucky').value=luckyNum1
+                  + ', ' + luckyNum2 + ', ' + luckyNum3 + ', ' + luckyNum4; "
+                  
+       />  
+       <br>
+       Your winning numbers are: <input type ="text" id="lucky" size="12" value="" />
+       
+     </form>
+     
+     
+
+   </div>
+ </body>
+</html>

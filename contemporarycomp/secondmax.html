@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Calculating the Max Part 2 </title> 
+    </head>
+    
+    <body>
+        <h4 style="text-align:center">Calculating the Max Part 2</h4>
+        
+        <script type="text/javascript">
+        
+        aNumber = prompt("Enter a number", "");
+        secondNumber = prompt("Now enter another number", "");
+        thirdNumber = prompt("Finally, enter one last number", "");
+        
+        aNumber = parseFloat(aNumber);
+        secondNumber = parseFloat(secondNumber);
+        thirdNumber = parseFloat(thirdNumber);
+        
+        m = Math.max(aNumber, secondNumber, thirdNumber);
+        
+        document.write("You entered the numbers " + aNumber + ", " + secondNumber + ", and " + thirdNumber + "." + "<p>");
+        document.write("The biggest number here is " + m + ".");
+    
+        </script>
+        
+    </body>

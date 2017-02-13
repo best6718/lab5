@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Image Swapper</title>
+    </head>
+    
+    <body>
+        
+        <script>
+        function swap() {
+        document.getElementById('leftImg').src = "http://balance3e.com/Images/sad.gif";
+        document.getElementById('rightImg').src = "http://balance3e.com/Images/happy.gif";
+        }
+        
+        </script>
+        
+        
+            <p>
+                <img id="leftImg" src="http://balance3e.com/Images/happy.gif">
+                <img id="rightImg" src="http://balance3e.com/Images/sad.gif">
+            </p>
+            
+            <input type="button" value = "Swap" onclick = "swap();"> 
+    </body>
+</html>

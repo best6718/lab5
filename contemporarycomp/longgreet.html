@@ -1,0 +1,37 @@
+
+<html><head><!-- greetbox.html                                   Dave Reed --><!-- This page displays a personalized greeting in a text area. --><!----------------------------------------------------------------><title>Long Greeting</title>
+   
+   <script type="text/javascript">
+     function Greet()
+     // Assumes: document.NameForm.firstName and
+     //          document.NameForm.lastName contain names
+     // Results: writes a message with those names in document.NameForm.message
+     {
+       var firstName, lastName, greeting;
+
+       firstName = document.NameForm.firstName.value;
+       lastName = document.NameForm.lastName.value;
+
+       greeting = "Hello " + firstName + " " + lastName + 
+                  ", or may I just call you " + firstName +
+                  "?  You wouldn't be related to the " + lastName +
+                  "s of Park Avenue, would you?";
+
+       document.NameForm.message.value = greeting;
+     }
+   </script></head>
+ 
+ 
+ 
+
+ <body>
+   <form name="NameForm">
+     Enter your first name: <input size="15" name="firstName" type="text">
+     <br>
+     Enter your last name: <input size="15" name="lastName" type="text">
+     <br><br>
+     <input value="Click for Greeting" onclick="Greet();" type="button">
+     <br><br>
+     <textarea name="message" rows="4" cols="40" wrap="virtual"></textarea>
+   </form>
+ </body></html>

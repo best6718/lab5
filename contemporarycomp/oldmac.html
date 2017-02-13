@@ -1,0 +1,45 @@
+
+<html>
+ 
+ <head>
+   <title> Old MacDonald </title>
+ </head>
+
+ <body>
+   <h3 style="text-align:center">Old MacDonald Had a Farm</h3>
+   
+   <script type="text/javascript">
+	
+	 refrain= "eeeeeeeeeee";
+   
+     animal1 = prompt("Enter a kind of animal:", "cow");
+     sound1 = prompt("What kind of sound does it make?", "moo");
+ 
+	 animal2 = prompt("Enter a kind of animal:", "");
+     sound2 = prompt("What kind of sound does it make?", "");
+ 
+	 animal=animal1;
+	 sound= sound1;
+	
+     document.write("<p>Old MacDonald had a farm, " + refrain +  " <br />");
+     document.write("And on that farm he had a " + animal + ", E-I-E-I-O.<br />");
+     document.write("With a " + sound + "-" + sound + " here, and a " +
+                    sound + "-" + sound + " there,<br />");
+     document.write("   here a " + sound + ", there a " + sound + 
+                    ", everywhere a " + sound + "-" + sound + ".<br />");
+     document.write("Old MacDonald had a farm," + refrain + "</p>");
+	 
+	 animal=animal2;
+	 sound= sound2;
+	 
+	 document.write("<p>Old MacDonald had a farm, E-I-E-I-O.<br />");
+     document.write("And on that farm he had a " + animal + ", E-I-E-I-O.<br />");
+     document.write("With a " + sound + "-" + sound + " here, and a " +
+                    sound + "-" + sound + " there,<br />");
+     document.write("   here a " + sound + ", there a " + sound + 
+                    ", everywhere a " + sound + "-" + sound + ".<br />");
+     document.write("Old MacDonald had a farm," + refrain + ".</p>");
+	 
+   </script>
+ </body>
+</html>

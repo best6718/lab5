@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> New Grades </title>
+    </head>
+    
+    
+    <body>
+        
+        <script type="text/javascript">
+            function newGrades(h, l, m, f)
+                    {
+            h = prompt("Please enter your homework average grade", "");
+            l = prompt("Please enter your lab average", "");
+            m = prompt("Please enter your midterm score", "");
+            f = prompt("Please enter your final exam score", "");
+            
+            }
+        </script>
+
+        <h5 style="text-align:center">Grades</h5>
+        
+        <script type="text/javascript">
+            
+            
+            hwavg = parseFloat(hwavg);
+            labavg = parseFloat(labavg);
+            midterm = parseFloat(midterm);
+            final = parseFloat(final);
+            
+            avg = (hwavg*0.25  + labavg*.2 + midterm *.25 + final* .3) 
+            
+            document.write( "Your homework average is: " + (0.25 * hwavg) + "<br>"
+            + "Your lab average is: " + (.20 * labavg) + "<br>" + "Your midterm score is: "
+            + (.25 * midterm) + "<br>" + "Your final score is: " + (.30 * final) 
+            + "<br>" + "The overall course average is: "  + avg );
+            
+            
+        </script>
+        
+        
+    </body>    
+    
+
+</html>

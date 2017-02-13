@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Grades Average</title>
+        
+        <script type="text/javascript">
+                    function Grades(homework, lab, midterm, final)
+                    { 
+                        h = homework*(.25);
+                        l = lab*(.20);
+                        m = midterm*(.25);
+                        f = final*(.30);
+                        grade = h+l+m+f;
+                        return grade;
+                    }
+                        
+            
+        </script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+            h = prompt("Please enter your homework grade", "");
+            l = prompt("Please enter your lab grade", "");
+            m = prompt("Please enter your midterm score", "");
+            f = prompt("Please enter your final exam score", "");
+            
+            h = parseFloat(h);
+            l = parseFloat(l);
+            m = parseFloat(m);
+            f = parseFloat(f);
+            
+            myFinalGrade = Grades(h, l, m, f);
+            
+            document.write( "Your homework grade is " + h + "<br>");
+            document.write("Your lab grade is " + l + "<br>");
+            document.write("Your midterm score is " + m + "<br>");
+            document.write( "Your overall course average is: "  + myFinalGrade );
+            
+
+        </script>
+    
+        
+    </body>
+</html>

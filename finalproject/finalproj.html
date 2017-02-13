@@ -1,0 +1,171 @@
+<html>
+    <head> 
+        <link rel="stylesheet" type="text/css" href="finalproj.css" />
+        
+        <title>Job Help</title>
+        
+        <script type="text/javascript" >
+            function Money(rent, food, utilities, gas, tuition, misc)
+                {
+                    var rent;
+                    var food;
+                    var utilities;
+                    var gas;
+                    var tuition;
+                    var misc;
+
+                    perMonth = rent + (food * 4) + utilities + (gas * 4) + tuition + (misc * 4);
+                    
+                    return perMonth;
+                }
+        </script>
+    </head>
+    
+    <body>
+    
+    <h1 class = "centered">GO GET THAT JOB!</h1>
+    
+    <h5 class = "centered">Made by Karena Huang, Sierra Burris, and Emma Luke.</h5>
+    
+    <hr>
+    
+    <h2 class = "centered">Step 1: Make a Cover Letter</h2>
+    
+    <p class ="centeredHelvetica">Welcome to the cover letter generator!</p>
+    <p class = "centeredHelvetica">This is a section where we can help you put together a cover letter! All you 
+    have to do is put in the information that we ask for and we'll do the rest!
+    Just fill out this easy form.</p>
+    
+    <hr>
+    
+    <div class="centered">
+    
+    <p>Date: <input type="text" id="date" size=20 value="December 1st, 2016"> </p>
+    
+    <p>Your e-mail: <input type="text" id="email" size=15 value=""> </p>
+    
+    <p>Your phone number: <input type="text" id="phone" size=10 value=""> </p>
+    
+    <p>Who you want the letter addressed to: <input type="text" id="addressedTo" size=15 value=""> </p>
+    
+    <p>First name: <input type="text" id="first" size=10 value=""> </p>
+    
+    <p>Last name: <input type="text" id="last" size=10 value=""> </p>
+    
+    <p>Position that you are applying for: <input type="text" id="job" size=10 value=""> </p>
+    
+    <p>Company that the job is at: <input type="text" id="company" size=10 value=""> </p>
+    
+    <p>Title of the last job that you had: <input type="text" id="lastJob" size=20 value="costume designer"> </p>
+    
+    <p>Company of the last job you had: <input type="text" id="lastCompany" size=10 value=""> </p>
+    
+    <p>At that job you learned: <br><br>
+                                <input type="text" id="skillOne" size=40 value="organizational skills"> 
+                                <input type="text" id="skillTwo" size=40 value="how to deal with crazy customers"> </p>
+                                
+    <p>Other past jobs you've had are: <br><br>
+                                    <input type="text" id="otherJobOne" size=30 value="video editor"> <br> <br>
+                                    <input type="text" id="otherJobTwo" size=30 value="dogsitter"> </p>
+                                
+    <p>You like this new company because: <input type="text" id="why" size=100 value=""> </p>
+    
+    <p>You are available starting: <input type="text" id="available" size=20 value=""> </p>
+   
+   </div>
+   
+    <hr>
+    
+    <input type = "button" value = "Click for your cover letter!" 
+        onclick =  "date = document.getElementById('date').value;
+                    email = document.getElementById('email').value;
+                    phone = document.getElementById('phone').value;
+                    addressedTo = document.getElementById('addressedTo').value;
+                    first = document.getElementById('first').value;
+                    last = document.getElementById('last').value;
+                    job = document.getElementById('job').value;
+                    company = document.getElementById('company').value;
+                    lastJob = document.getElementById('lastJob').value;
+                    lastCompany = document.getElementById('lastCompany').value;
+                    skillOne = document.getElementById('skillOne').value;
+                    skillTwo = document.getElementById('skillTwo').value;
+                    otherJobOne = document.getElementById('otherJobOne').value;
+                    otherJobTwo = document.getElementById('otherJobTwo').value;
+                    why = document.getElementById('why').value;
+                    available = document.getElementById('available').value;
+                    document.getElementById('outputDiv').innerHTML=
+                        first + ' ' + last + '<br>' +
+                        email + '<br>' +
+                        phone + '<br> <br>' +
+                        date + '<br> <br>' +
+                        'Dear ' + addressedTo + ', <br> <br>' +
+                        '    My name is ' + first + ' and I would love to be considered for the '
+                        + job + ' position at ' + company + '. <br> <br>' +
+                        '    In the past, I have worked as a ' + otherJobOne + ' and as a ' +
+                        otherJobTwo + '. My last job was a ' + lastJob + ' for ' + lastCompany +
+                        ', and it was at that position that I learned ' + skillOne + ' and ' +
+                        skillTwo + '. While I may no longer be working as a ' + lastJob + 
+                        ', these are skills that will carry on with me into this position as a ' +
+                         job + '. I would also be thrilled to work at ' + company + ' because ' +
+                          why + '. This is an opportunity I could not miss. <br><br> I am available ' +
+                           available + '. Thank you for your time and I look forward to hearing from you! <br><br> Sincerely, <br><br>' +
+                            first + ' ' + last;">
+        
+    
+    <div id='outputDiv'></div>
+    
+    <hr> 
+    
+    <h2 class="centered">Step 2: Nail That Interview</h2>
+    
+    <p class="centeredHelvetica">Here's a fun video to calm your nerves before an interview!</p>
+    
+    <br>
+    <div class="centered">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/MBvvmaPyj-k" 
+    frameborder="0" allowfullscreen>
+    </iframe>    
+    </div>
+    <br>
+    <hr>
+    
+    <h2 class="centered">Step 3: How Much Money Do You Need?</h2>
+    
+    <p class="centeredHelvetica">Don't forget to make sure you're gonna be making enough money!
+                                Use this section of the website to calculate how much you need to make.
+                                <br>If there's anything that doesn't apply to you, put a zero (0).</p>
+    <div class="centered">
+    <p>Enter how much rent you pay per month: <input type="text" id="rent" size=15 value=""></p>
+    
+    <p>Enter how much you spend on food per week: <input type="text" id="food" size=15 value=""></p>
+    
+    <p>Enter how much you pay in utilities per month: <input type="text" id="utilities" size=15 value=""></p>
+    
+    <p>Enter how much you pay for gas per week: <input type="text" id="gas" size=15 value=""></p>
+    
+    <p>Enter how much you pay for tuition per month: <input type="text" id="tuition" size=15 value=""></p>
+    
+    <p>Enter how much you spend on miscellaneous things per week: <input type="text" id="misc" size=15 value=""></p>
+    
+    <input type="button" value="Click for the amount you need!"
+            onclick="rent=parseFloat(document.getElementById('rent').value);
+                     food=parseFloat(document.getElementById('food').value);
+                     utilities=parseFloat(document.getElementById('utilities').value);
+                     gas=parseFloat(document.getElementById('gas').value);
+                     tuition=parseFloat(document.getElementById('tuition').value);
+                     misc=parseFloat(document.getElementById('misc').value);
+                     perMonth = Money(rent, food, utilities, gas, tuition, misc);
+                     document.getElementById('outputDivTwo').innerHTML=
+                         '<br>With the amounts that you entered, you will, at minimum, need to make ' +
+                          perMonth + ' per month.';">
+                          
+    <div id="outputDivTwo"></div>
+    </div>
+    <br><br>
+    
+    <h2 class="centered">Good Luck!</h2>
+    
+    </body>
+    
+</html>

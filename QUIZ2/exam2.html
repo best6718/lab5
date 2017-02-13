@@ -1,0 +1,41 @@
+<html> 
+
+<!-- This will be fun I hope -->
+    <head> 
+        <link rel="stylesheet" type="text/css" href="quiz2.css" />
+
+        <title> Age and Name</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+        function whenBorn(y1)
+        {
+            born = 2016-y1;
+            return born;
+            
+        }
+            var y1 = parseFloat("ageBox");
+        </script>
+        
+        <h1> Tell me her Age, I give you her Year </h1>    
+        
+    <p class = "ok"> 
+        Enter your full name: <input type="text" id="nameBox" size=15 value="">
+        Enter your age: <input type="text" id="ageBox" size=12 value="">
+    </p>
+    
+        
+    
+        <input class = "sure" type="button" value="Click Here"
+            onClick="   name = document.getElementById('nameBox').value;
+                             document.getElementById('outputDiv').innerHTML=
+                            'Hello there, ' + name + ' was born in ' 
+                            + whenBorn(y1); ">
+    <hr> 
+    <div id="outputDiv"></div>
+
+    </body>
+    
+    
+</html>

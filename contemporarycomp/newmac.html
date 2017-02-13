@@ -1,0 +1,36 @@
+
+<html>
+ <head>
+   <title> New Improved Old MacDonald </title>
+   <script type="text/javascript">
+     function OldMacVerse(animal, sound)
+                            //input parameters
+     {
+       document.getElementById('verseArea').value =
+           "Old MacDonald had a farm, E-I-E-I-O.\n" +
+           "And on that farm he had a " + animal + ", E-I-E-I-O.\n" +
+           "With a " + sound + "-" + sound + " here, and a " + 
+           sound + "-" + sound + " there,\n" +
+           "  here a " + sound + ", there a " + sound + 
+           ", everywhere a " + sound + "-" + sound + ".\n" +
+           "Old MacDonald had a farm, E-I-E-I-O.\n\n";
+     }
+   </script>
+ </head>
+
+ <body>
+   <h2>Old MacDonald Had a Farm</h2>
+   <p>
+   
+   <input type="button" value="Cow Verse" onclick="OldMacVerse('cow', 'moo');" />
+   <input type="button" value="Pig Verse" onclick="OldMacVerse('pig', 'oink');" />
+   
+   </p>
+   
+   <p>
+   <textarea id="verseArea" rows="5" cols="60"></textarea>
+   </p>
+ 
+ 
+ </body>
+</html>

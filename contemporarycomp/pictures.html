@@ -1,0 +1,41 @@
+
+<html>
+
+ <head>
+   <title> Alternating pictures </title>
+
+    <script type="text/javascript">
+     function change(a)
+     {
+       var hap = "<img src='happy.jpg' \/>" ;
+       var sad = "<img src='sad.png' \/>" ;
+
+       if (a == 'h')  {
+       	 x = hap
+       } else {
+       		x = sad
+       }
+
+       document.getElementById('PlaceHolder').innerHTML= x
+       	    
+     }
+   </script>
+
+
+   </script>
+
+ </head>
+
+ <body>
+     <div id="PlaceHolder">   </div> 
+
+
+  		 <input type="button" value="I am happy"  onclick="change('h');" />
+
+  		 <input type="button" value="I am sad"  onclick="change('s');"   />
+  		 
+
+           
+     
+ </body>
+</html>
